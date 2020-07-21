@@ -33,4 +33,11 @@ public class BusStopTest {
         stop.removePerson();
         assertEquals(3, stop.personCount());
     }
+
+    @Test
+    public void pickUpPerson() {
+        bus.pickUp(stop);
+        assertEquals(1, bus.personCount());
+        assertEquals(2, stop.personCount());
+    }
 }
