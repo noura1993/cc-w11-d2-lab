@@ -26,4 +26,11 @@ public class BusStopTest {
         stop.addPerson(person1);
         assertEquals(4, stop.personCount());
     }
+
+    @Test
+    public void removePerson() {
+        stop.addPerson(person1);
+        stop.removePerson();
+        assertEquals(3, stop.personCount());
+    }
 }
