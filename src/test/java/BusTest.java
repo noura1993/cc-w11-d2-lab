@@ -37,4 +37,12 @@ public void busStartsEmpty() {
     assertEquals(2, bus.personCount());
   }
 
+  @Test
+  public void removePerson() {
+    bus.addPerson(person1);
+    bus.addPerson(person2);
+    bus.removePerson();
+    assertEquals(1, bus.personCount());
+  }
+
 }
